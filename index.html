@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento Forex Trading Angola</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #7b8f9c 0%, #2f00ff 100%); /* Gradiente azul */
+            margin: 0;
+            padding: 0;
+            color: #2b55c9; /* Azul escuro para texto */
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            background: rgb(255, 255, 255);
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #3d2d94; /* Azul escuro */
+        }
+
+        header p {
+            margin: 10px 0 0;
+            font-size: 1.1rem;
+            color: #4b5563; /* Cinza escuro */
+        }
+
+        .payment-details {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        .payment-details h2 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #1e3a8a;
+        }
+
+        .client-info, .recipient-info {
+            margin-bottom: 20px;
+        }
+
+        .client-info h3, .recipient-info h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #1e3a8a;
+            margin-bottom: 12px;
+        }
+
+        .client-info p, .recipient-info p {
+            margin: 8px 0;
+            font-size: 1rem;
+            color: #4b5563;
+        }
+
+        .client-info span, .recipient-info .highlight {
+            font-weight: 600;
+            color: #15803d; /* Verde financeiro */
+        }
+
+        .chart {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .chart h2 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #1e3a8a;
+        }
+
+        #tradingview_widget {
+            height: 500px;
+            width: 100%;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>Plataforma de Pagamento - Forex Trading Angola</h1>
+            <p>Informações para pagamentos de operações na bolsa de valores</p>
+        </header>
+
+        <!-- Informações de Pagamento -->
+        <section class="payment-details">
+            <h2>Detalhes do Pagamento</h2>
+            
+            <!-- Dados do Cliente -->
+            <div class="client-info">
+                <h3>Dados do Cliente</h3>
+                <p>Nome: <span>Exemplo Cliente</span></p>
+                <p>IBAN: <span>AO06 1234 5678 9012 3456 789</span></p>
+            </div>
+
+            <!-- Dados do Destinatário -->
+            <div class="recipient-info">
+                <h3>Informações do Destinatário</h3>
+                <p>Por favor, efetue o pagamento com os seguintes dados:</p>
+                <p>Referência: <span class="highlight">549675064</span></p>
+                <p>Entidade: <span class="highlight">01055</span></p>
+                <p>Destinatário: Forex Trading Angola</p>
+            </div>
+        </section>
+
+        <!-- Gráfico TradingView -->
+        <section class="chart">
+            <h2>Gráfico Forex - TradingView</h2>
+            <div id="tradingview_widget"></div>
+        </section>
+    </div>
+
+    <!-- Scripts -->
+    <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            new TradingView.widget({
+                "width": "100%",
+                "height": "100%",
+                "symbol": "FX:EURUSD",
+                "interval": "1", // 1 minuto para atualizações em tempo real
+                "timezone": "Africa/Luanda",
+                "theme": "light",
+                "style": "1",
+                "locale": "pt",
+                "toolbar_bg": "#f1f3f6",
+                "enable_publishing": false,
+                "allow_symbol_change": true,
+                "realtime": true, // Ativa atualizações em tempo real
+                "container_id": "tradingview_widget"
+            });
+        });
+    </script>
+</body>
+</html>
